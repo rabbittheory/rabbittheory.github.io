@@ -1,402 +1,192 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9 no-js" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<title>Rabbit Theory</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="Software Solutions and Consulting Services">
-	<meta name="keywords" content="Rabbit Theory">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 	<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
 
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.5/jquery.pagepiling.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.5/jquery.pagepiling.js"></script>
-	<!-- Compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<link rel='stylesheet' href='./css/animate.css'>
-	<!-- Compiled and minified JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Josefin+Slab" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Abel" rel="stylesheet">
-
-	<style type="text/css">
-		.card.small .card-image+.card-content, .card.medium .card-image+.card-content, .card.large .card-image+.card-content {
-			max-height: none !important;
-		}
-		a.waves-effect.waves-light.white.btn.activator {
-			margin-top: 2rem;
-		}
-		p.white-text.supercode {
-			min-height: 45px;
-		}
-		.card-reveal {
-			color: black;
-		}
-		a:hover {
-			text-decoration: none;
-			color: inherit;
-		}
-		a.button {
-			border: solid white;
-			text-transform: uppercase;
-			display: inline-block;
-			transition: all 1s ease;
-			color: white;
-			text-decoration: none;
-			border-radius: 6px;
-			padding: 15px 30px;
-			font-weight: bold;
-			background: #ffffff12;
-			margin-top: 2rem;
-		}
-	}
-	a.button:hover {
-		color: black;
-		background: white;
-	}
-	p{
-		font-family: Abel, sans-serif;
-	}
-	h1{
-		font-family: Abel, sans-serif;
-		font-size: 18px;
-		font-weight: bold;
-	}
-	.section {
-		padding: 0;
-		text-align: center;
-		color:white;
-		background-position: center center;
-	}
-	@keyframes shrink {
-		0% {
-			transform: scale(1);
-		}
-		100% {
-			transform: scale(1.1);
-		}
-	}
-	nav {
-		position: absolute !important;
-		z-index: 99999;
-		background: 0 !important;
-		border: none !important;
-		box-shadow: none !important;
-	}
-	.fadeInUp{
-		animation-duration:3s;
-	}
-	.sidenav{
-		top: 5rem;
-		left: 1rem;
-		background: black;
-	}
-	a.nav-link{
-		color: white !important;
-		text-transform: uppercase;
-		font-family: Abel, sans-serif;
-		font-size: 1.5rem !important;
-	}
-
-	.wwd-description {
-		font-family: JosefinSlab, sans-serif;
-		font-size: 14px;
-		text-transform: uppercase;
-		margin-top: 1rem;
-		min-height: 50px;
-	}
-	.description {
-		font-family: Abel;
-		font-size: 24px;
-		text-transform: uppercase;
-		margin: 1rem;
-	}
-	.intro-text{
-		position: absolute;bottom: 15px;left: 0;width: 100%;
-	}
-	video#intro {
-    width: 100%;
-}
-.section.pp-section.pp-table {
-    background: black;
-}
-	@media only screen and (max-width: 768px) {
-		video#intro {
-			object-position: center;
-			object-fit: cover;
-			position: absolute;
-			width: 272%;
-			top: 15%;
-			left: -90%;
-		}
-		.section.pp-section.active.pp-table {
-			background: black;
-		}
-		span.card-title {
-			font-size: 13px !important;
-			font-weight: bold !important;
-		}
-		.intro-text{
-			bottom: 20px !important;
-		}
-		p.wwd-sub-description {
-			font-size: 16px;
-			margin: 0;
-		}
-		.hide-mob{
-			display: none;
-		}
-		.wwd-description{
-			min-height: 0;
-			margin: 0;
-		}
-		.card-content {
-			text-align: left;
-		}
-		p.white-text.supercode {
-			height: 160px;
-		}
-	}
-	.col.l2 {
-		width: 100%;
-	}
-	p.wwd-description {
-		margin: 5px;
-	}
-
-	.col.l2 {
-		margin-top: 12px;
-	}
-	@media (min-width: 1281px) {
-
-		.row {
-			width: 70%;
-		}  
-	}
-	@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
-		/* For portrait layouts only */
-		.row {
-			width: 70%;
-		}
-	}
-
-
-</style>
+    <meta name="theme-color" content="">
+    <link rel="canonical" href="https://rabbittheory.com/">
+    <title>Rabbit Theory - Software Solutions and Consulting Services</title>
+    <meta name="description" content="Software Solutions and Consulting Services">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
-	<div id="pagepiling">
-
-		<div class="section">
-			<video autoplay muted loop id="intro">
-				<source src="./film.mp4" type="video/mp4">
-				</video>
-				<div class='intro-text'>
-
-					<p class="description">London Based - Software Solutions and Consulting Services</p>
-					<a class="button" href='mailto:ug@rabbittheory.com'>GET IN TOUCH</a>
-				</div>
-			</div>
-
-
-			<div class="section" style="background:#261c29">
-				<h1 class="animated fadeInUp" style="font-family: JosefinSlab, sans-serif;letter-spacing: 1.5rem;">OUR SERVICES</h1>
-				<div class="row container" >
-					<div class="col l2">
-
-						<i class="material-icons" style="font-size: 3rem !important">shop</i>
-						<p class="wwd-description">Template Development</p>
-						<p class="wwd-sub-description">Specialised with Shopify, Magento and other popular E-Commerce development services</p>
-
-					</div>
-					<div class="col l2">
-						<i class="material-icons" style="font-size: 3rem !important">code</i>
-						<p class="wwd-description">Software Development</p>
-						<p class="wwd-sub-description">Your custom web application powered by React.js.</p>
-
-					</div>
-					<div class="col l2 hide-mob">
-						<i class="material-icons" style="font-size: 3rem !important">grain</i>
-						<p class="wwd-description">Machine Learning</p>
-						<p class="wwd-sub-description">Our project Speech To Emotion is an experimental software that is developed to detect human emotion by using speech data.</p>
-					</div>
-
-					<div class="col l2">
-						<i class="material-icons" style="font-size: 3rem !important">phone_iphone</i>
-						<p class="wwd-description">Native Mobile Applications</p>
-						<p class="wwd-sub-description">Built with Objective-C, Swift and React Native, producing scalable native applications.</p>
-					</div>
-					<div class="col l2">
-						<i class="material-icons" style="font-size: 3rem !important">brush</i>
-						<p class="wwd-description">UI UX Design</p>
-						<p class="wwd-sub-description">Following the latest design insights and user interface trends.</p>
-					</div>
-					<div class="col l2">
-						<i class="material-icons" style="font-size: 3rem !important">camera</i>
-						<p class="wwd-description">Digital Content Services</p>
-						<p class="wwd-sub-description">Animated logos, visual effects and video compositions.</p>
-					</div>
-
-				</div>
-
-			</div>
-
-
-
-			<div class="section" style="background:rgb(50, 49, 66)">
-
-				<div class="row">
-					<div class="col s6">
-						<div class="card large black darken-2">
-							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="img/keylight.png">
-							</div>
-							<div class="card-content">
-								<span class="card-title activator white-text text-darken-4 code">Keylight<i class="material-icons right">more_vert</i></span>
-								<p class='white-text supercode'>Start writing your next movie, TV show or audio drama for free. With Keylight, you can start typing in just under a minute.</p>
-								<a class="waves-effect waves-light white black-text btn activator" >More</a>
-							</div>
-							<div class="card-reveal">
-								<p>Start writing your next movie, TV show or audio drama for free. With Keylight, you can start typing in just under a minute.</p>
-
-
-								<div><br>
-									<a class="waves-effect waves-light white-text black btn" href="https://keylightapp.com" >START USING FOR FREE</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col s6">
-						<div class="card large light-blue darken-2">
-							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="img/kraftax.png">
-							</div>
-							<div class="card-content">
-								<span class="card-title activator white-text text-darken-4 code">Kraftax (iOS)<i class="material-icons right">more_vert</i></span>
-								<p class='white-text supercode'>finance and tax made easy for artists.</p>
-								<a class="waves-effect waves-light white light-blue-text btn activator" >More</a>
-							</div>
-							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">Kraftax<i class="material-icons right">close</i></span>
-								<p>Kraftax makes it easy for self-employed artists to manage their finances and submit their tax return.</p>
-								<h1>Technologies Used:</h1>
-								<li>React Native</li>
-								<li>Firebase</li>
-								<li>Objective-C</li>
-
-								<div><br>
-									<a class="waves-effect waves-light white-text light-blue btn" >CURRENTLY NOT MAINTAINED</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-		
-
-
-
-				</div>
-			</div>
-			<div class="section" style="background:#313d42">
-				<h1 class="animated fadeInUp" style="font-family: JosefinSlab, sans-serif;letter-spacing: 1.5rem;">PROJECTS</h1>
-				<div class="row">
-
-					<div class="col s6">
-						<div class="card large green">
-							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="img/homefield.png">
-							</div>
-							<div class="card-content">
-								<span class="card-title activator white-text text-darken-4 code">Homefield<i class="material-icons right">more_vert</i></span>
-								<p class='white-text supercode'>An organisation and tracking application for flatmates.</p>
-								<a class="waves-effect waves-light white green-text btn activator" >More</a>
-							</div>
-							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">Homefield<i class="material-icons right">close</i></span>
-								<p>An organisation and tracking application for flatmates. Register for an household, invite your flatmates and organise your flat online. Homefield enables flatmates to communicate and keep on track with the latest developments in the house and also keeps in track the expenses each flat member made</p>
-								<h1>Technologies Used:</h1>
-								<li>Swift</li>
-								<li>Firebase</li>
-								<div><br>
-									<a class="waves-effect waves-light white-text green btn" href="emailto:ug@rabbittheory.com" >Request a copy</a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-
-					<div class="col s6">
-						<div class="card large light-blue darken-2">
-							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="img/splash-2.png">
-							</div>
-							<div class="card-content">
-								<span class="card-title activator white-text text-darken-4 code">Mr. Chillrun <i class="material-icons right">more_vert</i></span>
-								<p class='white-text supercode'>A 2D Platformer game for mobile devices</p>
-								<a class="waves-effect waves-light white light-blue-text btn activator" >More</a>
-							</div>
-							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">Mr.Chillrun<i class="material-icons right">close</i></span>
-								<p>Mr. Chillrun is a platformer game with gameplay changing power ups. Get on your wings and fly, slow the time to smash your enemies, carry a shield to defend yourself from the ghosts and more. And jump... a lot.</p>
-								<h1>Technologies Used:</h1>
-								<li>Unity 3D</li>
-								<li>C#</li>
-								<li>Affinity Designer</li>
-								<div><br>
-									<a class="waves-effect waves-light white-text light-blue btn" >CURRENTLY NOT MAINTAINED</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-			<div class="section" style='background:rgb(52,93,133'>
-				<div class="row">
-					<div class="col s6">
-						<div class="card large red darken-2">
-							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="img/bmg-ios.png">
-							</div>
-							<div class="card-content">
-								<span class="card-title activator white-text text-darken-4 code">Besiktas Media Group<i class="material-icons right">more_vert</i></span>
-								<p class='white-text supercode'>Online news reader + live radio streamer</p>
-								<a class="waves-effect waves-light white red-text btn activator" >More</a>
-							</div>
-							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">Besiktas Gazetesi<i class="material-icons right">close</i></span>
-								<p>The mobile application of Besiktas Media Groups services. App is designed to provide live stream audio of their radio channel and the PDF Reader of their newspaper</p>
-								<h1>Technologies Used:</h1>
-								<li>Objective-C</li>
-								<div><br>
-									<a class="waves-effect waves-light white-text light-blue btn" >CURRENTLY NOT MAINTAINED</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-
-		</div>
-	</div>
-	<script type="text/javascript">
-
-		$(document).ready(function() {
-			$('#pagepiling').pagepiling({
-				navigation: {
-					'textColor': 'transparent',
-					'bulletsColor': 'white',
-					'position': 'right',
-					'tooltips': ['Introduction', 'Our Services', 'Projects', 'Projects','Projects','Projects']
-				},
-			});
-			$('.parallax').parallax();
-			$('.sidenav').sidenav();
-		});
-	</script>
-
-
-
+    
+    <div class="container" style="background: url(./rabbit-theory-banner-copy.png);
+    background-size: cover;
+    background-repeat: no-repeat;">
+    <div class="flex welcome">
+        <div class="half">
+            <img src="./rabbit-theory-logo-white.png" class="responsive" style="max-width: 350px;">
+        </div>
+        <div class="half">
+            <p class='welcome-title' style="
+            font-weight: bold;">
+            SOFTWARE SOLUTIONS AND CONSULTING SERVICES</p>
+            <p class='welcome-title'>
+                We develop applications and offer services ranging from UI & UX design to e-Commerce theme development.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container" style="">
+        <div class="flex">
+            <div class="full">
+                <p class="title">Keylight</p>
+                <p class="subtitle">A light-weight web-based screenwriting application.</p>
+            </div>
+            <div class="half">
+                <img src="./keylight.png" class="responsive">
+            </div>
+            
+            <div class="half">
+                <p class="description">Start writing your next movie, TV show or audio drama for free. With Keylight, you can start typing in just under a minute.</p>
+                <a href='https://keylightapp.com/'><div class="button">TRY FOR FREE</div></a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="container" style="">
+        <div class="flex">
+            <div class="full">
+                <p class="title">Dreamlog</p>
+                <p class="subtitle">Your personal dream journal for iOS operating systems.</p>
+            </div>
+            <div class="half">
+                <img src="./dreamlog.png" class="responsive">
+            </div>
+            
+            <div class="half">
+                <p class="description">
+                    Dreamlog is a dream journal app in which you can write and browse through your dreams. You can insert tags and information for every individual dream for an in-depth analysis.
+                    <br/>Project currently in development with a close alpha test planned for Q3 2022.
+                    
+                </p>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="container" style="">
+        <div class="flex">
+            <div class="full">
+                <p class="title">Kraftax (iOS)</p>
+                <p class="subtitle">Finance and tax made easy for artists.</p>
+            </div>
+            <div class="half">
+                <img src="./kraftax.png" class="responsive">
+            </div>
+            
+            <div class="half">
+                <p class="description">
+                    Kraftax makes it easy for self-employed artists to manage their finances and submit their tax return.
+                    <br/>Created for our friends at Fox Theory ❤️
+                </p>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="container" style="">
+        <div class="flex">
+            <div class="full">
+                <p class="title">Custom Development for end-clients</p>
+            </div>
+            <div class="half">
+                <img src="./subscriptionplanner.png" class="responsive">
+            </div>
+            
+            <div class="half">
+                <p class="description">
+                    We are experienced in Shopify Liquid programming language to develop storefront themes for online e-Commerce stores.
+                    <br/>
+                    We offer a range of development services, from web applications customly developed with React.js to Digital, UI and UX Design.
+                    <br/>
+                    Project <strong>Coffee Subscription Planner</strong> delivered for a multi-site coffee brand that has stores in London, Paris, Edinburgh and Oxford, enabling their customers to create customisable coffee subscription options.                    
+                    <br/>
+                </p>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <style>
+        body {margin: 0;}
+        
+        .container {background: #F2F2F2;padding: 0 64px;min-height: 100vh;padding: 0px 15%;}
+        
+        .flex {display: flex;flex-wrap: wrap;}
+        
+        .half {width: 50%;}
+        
+        p.description {text-align: justify;font-size: 28px;line-height: 1.5;}
+        
+        p.title {font-size: 64px;margin-bottom: 0;}
+        
+        p.subtitle {font-size: 28px;}
+        
+        .full {width: 100%;margin-bottom: 48px;}
+        
+        img.responsive {width: 70%;}
+        
+        * {font-family: Josefin Slab; color:#3E3333;text-decoration: none;}
+        .welcome-button{
+            float:right;
+        }
+        .button {
+            background: black;
+            padding: 24px;
+            border-radius: 4px;
+            color: white;
+            text-align: center;
+            width: 260px;
+            font-family: Helvetica Neue, Helvetica,'Josefin Slab';
+            font-size: 18px;
+        }
+        .welcome{
+            place-items: flex-end;
+            min-height: 1000px;
+            min-height: calc(100vh - 180px);
+        }
+        .welcome-title{
+            font-size: 36px;
+            color: white;
+            text-align: right;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .welcome-button{
+                float:none;
+            }
+            .half {width: 100%;}
+            
+            p.title {font-size: 28px;}
+            
+            p.description {font-size: 16px;}
+            
+            p.subtitle {font-size: 16px;}
+            
+            .container {min-height: 100vh;}
+            
+            .button {width: unset;padding: 12px 0;font-size: 14px;}
+            
+            .welcome-title {font-size: 18px;}
+            
+            img.responsive {width: 100%;max-width: none;}
+            
+            
+        }
+    </style>
 </body>
