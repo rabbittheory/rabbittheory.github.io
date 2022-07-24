@@ -19,17 +19,12 @@
 </head>
 <body>
     
-    <div class="container" style="background: url(./rabbit-theory-banner-copy.png);
-    background-size: cover;
-    background-repeat: no-repeat;">
+    <div class="container" style="background:linear-gradient(225deg, #8f1c5d 30%, #e7cd65)">
     <div class="flex welcome">
-        <div class="half">
-            <img src="./rabbit-theory-logo-white.png" class="responsive" style="max-width: 350px;">
-        </div>
-        <div class="half">
-            <p class='welcome-title' style="
-            font-weight: bold;">
-            SOFTWARE SOLUTIONS AND CONSULTING SERVICES</p>
+            <img src="./rabbit-theory-logo-white.png" class="responsive" style="max-width: 250px;">
+            <p class="big-title">RABBIT THEORY</p>
+
+        <div >
             <p class='welcome-title'></p>
                 <a href='mailto:info@rabbittheory.com' class="welcome-button"><div class="button">GET IN TOUCH</div></a>
             </div>
@@ -59,7 +54,7 @@
         <div class="flex">
             <div class="full">
                 <p class="title">Dreamink</p>
-                <p class="subtitle">Your personal dream journal for iOS operating systems.</p>
+                <p class="subtitle">Your personal dream journal powered with AI</p>
             </div>
             <div class="half">
                 <img src="./dreamink.png" class="responsive">
@@ -67,10 +62,11 @@
             
             <div class="half">
                 <p class="description">
-                    Dreamink is a dream journal app in which you can write and browse through your dreams. You can insert symbols and information for every individual dream for an in-depth analysis with intuitive visuals.
+                    Dreamink is a dream journal application for iOS operating systems in which you can write and browse through your dreams. You can insert symbols and information for every individual dream for an in-depth analysis with intuitive visuals.
                     <br/>Project currently in development with a closed alpha release planned for Q3 2022.
-                    
                 </p>
+                <a href='https://dreamink.web.app/'><div class="button">LEARN MORE</div></a>
+
             </div>
             
         </div>
@@ -141,7 +137,7 @@
         
         img.responsive {width: 70%;}
         
-        * {font-family: Josefin Slab; color:#3E3333;text-decoration: none;}
+        * {font-family: Josefin Slab; color:#3E3333;text-decoration: none;-webkit-font-smoothing: antialiased;}
         .welcome-button{
             float:right;
         }
@@ -153,19 +149,26 @@
             text-align: center;
             width: 260px;
             font-family: Helvetica Neue, Helvetica,'Josefin Slab';
-            font-size: 18px;
+            font-size: 14px;
+            font-weight: bold;
         }
         .welcome{
             place-items: flex-end;
             min-height: 1000px;
             min-height: calc(100vh - 180px);
+            justify-content: center;
+    align-items: center;
+    flex-direction: column;
         }
         .welcome-title{
             font-size: 36px;
             color: white;
             text-align: right;
         }
-        
+        p.big-title {
+    color: white;
+    font-size: 2.5vh;
+}
         @media only screen and (max-width: 768px) {
             .welcome-button{
                 float:none;
