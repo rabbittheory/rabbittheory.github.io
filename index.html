@@ -23,6 +23,7 @@
     <div class="flex welcome">
             <img src="./rabbit-theory-logo-white.png" class="responsive" style="max-width: 250px;">
             <p class="big-title">RABBIT THEORY</p>
+            <p class="big-title but-not-so-big">Software Development and Creative Design Services</p>
 
         <div >
             <p class='welcome-title'></p>
@@ -31,11 +32,11 @@
         </div>
     </div>
     
-    <div class="container" style="">
+    <div class="container">
         <div class="flex">
             <div class="full">
                 <p class="title">Dreamink</p>
-                <p class="subtitle">Your Dream Journal, AI Powered</p>
+                <p class="subtitle">AI powered private dream journal</p>
             </div>
             <div class="half">
                 <img src="./dreamink.png" class="responsive">
@@ -43,20 +44,21 @@
             
             <div class="half">
                 <p class="description">
-                    Dreamink is a dream journaling app.
-                    <br>
-                    With Dreamink, you can record the things you see in your dreams to understand what they signify and how different dreams are connected to each other.
+                With Dreamink you can write down your dreams and use AI powered suggestions to create your personal collection of dream symbols.
+                <br/>
+                The more dreams and symbols you enter, the more meaningful information and trends may emerge. Check these back later to analyse and understand your inner world better.
                 </p>
-                <a href='https://apps.apple.com/gb/app/dreamink/id1637114296'><div class="button">DOWNLOAD FOR FREE</div></a>
+                <div class="buttons-container">
+                <a href='https://apps.apple.com/gb/app/dreamink/id1637114296'><div class="button">DOWNLOAD ON THE APP STORE</div></a>
                 <a href='https://dreamink.app'><div class="button">LEARN MORE</div></a>
-
+                </div>
             </div>
             
         </div>
         
     </div>
 
-    <div class="container" style="">
+    <div class="container">
         <div class="flex">
             <div class="full">
                 <p class="title">Keylight</p>
@@ -76,7 +78,7 @@
     
 
     
-    <div class="container" style="">
+    <div class="container">
         <div class="flex">
             <div class="full">
                 <p class="title">Kraftax (iOS)</p>
@@ -97,7 +99,7 @@
         
     </div>
     
-    <div class="container" style="">
+    <div class="container">
         <div class="flex">
             <div class="full">
                 <p class="title">Bespoke Development for end-clients</p>
@@ -108,11 +110,9 @@
             
             <div class="half">
                 <p class="description">
-                    We are experienced in Shopify Liquid programming language to develop storefront themes for online e-Commerce stores.
+                    We have experience in <strong>Shopify Liquid</strong> programming language, enabling us to develop storefront themes for online e-commerce stores. Our range of development services includes custom web applications built with technologies like <strong>React</strong>, as well as creative offerings such as UI and UX design.
                     <br/>
-                    We offer a range of development services, from web applications customly developed with technologies such as React.js to creative services such as UI and UX Design.
-                    <br/>
-                    Project <strong>Coffee Subscription Planner</strong> delivered for a multi-site coffee brand that has stores in London, Paris, Edinburgh and Oxford, enabling their customers to create customisable coffee subscription options.                    
+                    We have successfully delivered the <strong>"Coffee Subscription Planner"</strong> project for a multi-site coffee brand with locations in London, Paris and Edinburgh. This solution empowers their customers to design personalized coffee subscription choices.
                     <br/>
                 </p>
             </div>
@@ -124,7 +124,7 @@
     <style>
         body {margin: 0;}
         
-        .container {background: #F2F2F2;padding: 0 64px;min-height: 100vh;padding: 0px 15%;}
+        .container {background: #F2F2F2;padding: 0 64px;min-height: 100vh;padding: 0px 10%;}
         
         .flex {display: flex;flex-wrap: wrap;}
         
@@ -147,17 +147,18 @@
             float:right;
         }
         .button {
-            background: black;
-            padding: 24px;
-            border-radius: 4px;
-            color: white;
-            text-align: center;
-            width: 260px;
-            font-family: Helvetica Neue, Helvetica,'Josefin Slab';
-            font-size: 14px;
-            font-weight: bold;
-            margin: 4px 0;
-            min-width:200px;
+    background: #1d2e32e6;
+    padding: 20px 16px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    width: 260px;
+    font-family: Helvetica Neue, Helvetica,'Josefin Slab';
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 0;
+    min-width: 200px;
+
         }
         .welcome{
             place-items: flex-end;
@@ -173,10 +174,31 @@
             text-align: right;
         }
         p.big-title {
-    color: white;
-    font-size: 2.5vh;
+            color: white;
+            font-size: 2.5vh;
+        }
+
+        .buttons-container {
+            display: flex;
+            gap: 12px;
+            flex-direction: row;
+        }
+p.big-title.but-not-so-big {
+    font-size: 2vh;
+    margin: 0;
+    opacity: 0.75;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.25;
 }
+
         @media only screen and (max-width: 768px) {
+        .full {margin-bottom: 24px;}
+
+            .buttons-container {
+                flex-direction: column;
+            }
+
             .welcome-button{
                 float:none;
             }
