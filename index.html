@@ -31,7 +31,17 @@
             </div>
         </div>
     </div>
-    
+    <div class="container quote">
+    <p class="quote-p">
+        <span>"</span>
+        We had the pleasure of collaborating with Rabbit Theory for our front-end development on our website, and the experience was nothing short of exceptional. The team at Rabbit Theory demonstrated expertise in technical knowledge and application to our platform. Their attention to detail, commitment to deadlines, and proactive communication made the entire process smooth and efficient. We highly recommend Rabbit Theory for their top-notch front-end development and UI design services.
+        <span>"</span>
+
+    </p>
+    <p class="quote-author">Amit Nakrani</p>
+    <p class="quote-title">Head of IT, Black Sheep Coffee</p></div>
+
+
     <div class="container">
         <div class="flex">
             <div class="full">
@@ -191,8 +201,40 @@ p.big-title.but-not-so-big {
     text-align: center;
     line-height: 1.25;
 }
+p.quote-p {
+    font-size: 35px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.container.quote {
+    text-align: center;
+    min-height: auto;
+    margin: 0;
+    display: block;
+    background: #ebe1e6;
+    padding: 12px 10%;
+}
+
+
+
+p.quote-author {
+    font-size: 18px;
+    font-weight: bold;
+}
+.quote-p span {
+    font-size: 48px;
+    color: #952c5d;
+}
 
         @media only screen and (max-width: 768px) {
+            .quote-p span {
+    font-size: 24px;
+    color: #952c5d;
+}
+            p.quote-p {
+    font-size: 18px;
+}
         .full {margin-bottom: 24px;}
 
             .buttons-container {
